@@ -1,2 +1,37 @@
-# EnglishToRussian-SublimeText
-"Keyboard layout converter for Sublime Text - English ↔ Russian"
+# EnglishToRussian Plugin для Sublime Text
+
+**Автор:** Гаркуша Дарья
+**Группа:** М3122 
+**Лабораторная работа:** №3
+
+## Описание
+Плагин для автоматического перевода текста между английской и русской раскладками клавиатуры в Sublime Text.
+
+## Возможности
+- Автоматическое определение языка текста
+- Перевод с английской раскладки на русскую
+- Перевод с русской раскладки на английскую
+- Простая установка и использование
+
+## Установка
+1. Скачайте файл `EnglishToRussian.py`
+2. В Sublime Text: `Preferences → Browse Packages...`
+3. Перейдите в папку `User`
+4. Скопируйте файл `EnglishToRussian.py` в эту папку
+5. Перезапустите Sublime Text
+
+## Использование
+1. Выделите текст в редакторе
+2. Откройте Command Palette (Ctrl+Shift+P)
+3. Введите "english_to_russian" и нажмите Enter
+
+## Примеры
+- `Hello` → `Руддщ`
+- `Привет` → `Ghbdtn`
+- `Test` → `Еуые`
+
+
+## Архитектура
+- Класс `EnglishToRussianCommand` наследуется от `TextCommand`
+- Используется API Sublime Text для работы с текстом
+- Автоматическое определение языка по набору символов
